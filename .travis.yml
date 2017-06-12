@@ -3,6 +3,10 @@ language: c
 notifications:
   email: false
 
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y gperf
+
 install: true
 
 script: make
