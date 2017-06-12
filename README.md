@@ -42,6 +42,22 @@ The command builds a debug version and a release version of the program, and put
     build/frontend/ivl-install-debug
     build/frontend/ivl-install-release
 
+To only build the debug version or the release version, please use the command `make debug` or the command `make release` respectively.
+
+The built program is 64-bit on a 64-bit operating system. On a 32-bit operating system, the built program is 32-bit.
+
+### Building 32-Bit Program on 64-Bit Operating System
+
+On a 64-bit operating system, the frontend can also be built into a 32-bit program. To do so, please add `CONFIG_FLAGS=--with-m32` to the `make` command.
+
+## Checking the Program
+
+To check whether the program is built successfully, the following command can be used.
+
+    make check
+
+To only check the debug version or the release version, please use the command `make checkdebug` or the command `make checkrelease` respectively.
+
 ## Using the Program
 
 This program can be invoked by CModelGen automatically. To see how it is invoked, add the `--verbose` flag to any CModelGen-invoking command.
