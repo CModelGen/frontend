@@ -1,11 +1,15 @@
-language: c
-
 notifications:
   email: false
 
+language: c
+
+os:
+  - linux
+  - osx
+
 install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y gperf
+  # - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get -qq update; else brew update; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install -y gperf; else brew install gperf; fi
 
 script: make
 

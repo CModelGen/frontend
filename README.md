@@ -1,6 +1,6 @@
-[![Travis Build Status](https://travis-ci.org/CModelGen/frontend.svg?branch=master)](https://travis-ci.org/CModelGen/frontend/)
-
 # CModelGen Frontend
+
+[![Travis Build Status](https://travis-ci.org/CModelGen/frontend.svg?branch=master)](https://travis-ci.org/CModelGen/frontend/)
 
 This project implements a frontend program for [CModelGen](https://github.com/CModelGen/CModelGen).
 The program is extended from the [Icarus Verilog](http://iverilog.icarus.com/).
