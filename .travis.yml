@@ -1,0 +1,12 @@
+language: c
+
+notifications:
+  email: false
+
+install: true
+
+script: make
+
+branches:
+  only:
+  - master
